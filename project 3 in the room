@@ -1,0 +1,179 @@
+//ATIVIDADE
+
+
+
+/*1)Escrever um programa em C para ler dois valores e escrever o maior
+deles.
+
+int a, b;
+printf("Digite oprimeirto valor:");
+scanf("%d", &a);
+printf("Digite o segundo valor:");
+scanf("%d", &b);
+
+if(a > b){
+    printf("O maior valor é: %d", a);
+} else if(b > a){
+    printf("O maior valor é:%d", b);
+}*/
+
+
+
+/*2)Escrever um programa em C para ler três valores e escrever o maior
+deles.
+
+int a, b, c;
+printf("Informe primeiro valor:");
+scanf("%d", &a);
+printf("Informe segundo valor:");
+scanf("%d", &b);
+printf ("informe terceiro valor:");
+scanf("%d", &c);
+
+if (a >= b && a >= c){
+        printf("O maior valor é: %d", a);
+} else if (b >= a && b >= c){
+    printf("O maior valor é: %d", b);
+} else {
+    printf("O maior valor é: %d", c);
+}*/
+
+
+
+/*3)Escrever um programa em C para ler três valores e escreve-los em
+ordem crescente.
+int a, b , c, temp;
+printf("Informe prim eiro valor:");
+scanf("%d", &a);
+printf("Informe segundo valor:");
+scanf("%d", &b);
+printf("Informe terceiro valor:");
+scanf("%d", &c);
+
+if (a > b){
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+if (a > c){
+    temp = a;
+    a = c;
+    c = temp;
+}
+
+if (b > c){
+    temp = b;
+    b = c;
+    c = temp;
+}
+printf("Os valores em ordem crescente são: %d, %d, %d, ", a, b, c);*/
+
+
+
+/*4) Escreva um programa em C para ler três notas e o nome de um
+aluno, calcular e escrever sua média e o conceito aprovado ou
+reprovado(aprovado com média maior ou igual a 7);
+
+char nome [30];
+float a, b, c, media;
+
+printf("Nome do aluno:");
+scanf("%s", &nome);
+setbuf(stdin, NULL);
+printf("Informe primeira nota:");
+scanf("%f", &a);
+printf("Informe segunda nota:");
+scanf("%f", &b);
+printf("Informe terceira nota:");
+scanf("%f", &c);
+
+media = (a + b + c) / 3;
+printf("Média do aluno: %.2f", media);
+
+if (media >= 7){
+    printf("Aprovado(a)");
+} else{
+    printf("Reprovado(a)");
+}*/
+
+
+
+/*5)Escrever um programa em C para ler dois valores e mostrar uma
+mensagem se os valores são múltiplos ou não.
+int a, b;
+printf("Digite o primeiro valor:");
+scanf("%d", &a);
+printf("Digite o segundo valor:");
+scanf("%d", &b);
+if (b != 0 && (a % b == 0)){
+        printf("%d é multiplo de %d", a, b);
+} else if (a != 0 && (b % a == 0)){
+    printf("%d é multiplo de %d", b, a);
+} else {
+    printf("Os valores não são múltiplos entre si");
+}*/
+
+
+
+/*6)Escreva um programa em C para ler um número inteiro mostrar a
+mensagem se o número é par ou impar.
+int a;
+printf("Digite um número inteiro:");
+scanf("%d", &a);
+
+if (a % 2 == 0){
+        printf("O número %d é par.", a);
+} else {
+    printf("O número %d é ímpar.", a);
+}*/
+
+
+
+/*7)Escreva um programa em C para ler o nome, altura e peso de duas
+pessoas, mostrar o nome da pessoa mais pesada e o nome da pessoa
+mais alta.
+char nome1[30], nome2[30];
+float altura1, peso1, altura2, peso2;
+
+printf("Digite o primeiro nome:");
+scanf("%s", &nome1);
+printf("Digite altura da primeira pessoa:");
+scanf("%f", &altura1);
+printf("Digite peso da primeira pessoa:");
+scanf("%f", &peso1);
+
+printf("Digite o segundo nome:");
+scanf("%s", &nome2);
+printf("Digite altura da segunda pessoa:");
+scanf("%f", &altura2);
+printf("Digite peso da segunda pessoa:");
+scanf("%f", &peso2);
+
+if (peso1 > peso2){
+    printf("A pessoa mais pesada é: %s", nome1);
+} else if (peso2 > peso1){
+    printf("A pessoa mais pesada é: %s", nome2);
+} else {
+    printf("Ambas as pessoas têm o mesmo peso.");
+}
+
+if (altura1 > altura2){
+    printf("A pessoa mais alta é: %s", nome1);
+} else if (altura2 > altura1){
+    printf("\nA pessoa mais alta é: %s", nome2);
+} else {
+    printf("Ambas as pessoas têm a mesma altura.");
+}*/
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
